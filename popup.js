@@ -1,5 +1,5 @@
 // ─── Server URL (configurable via Settings tab) ───────────────────────────────
-let SERVER_URL = 'http://localhost:5001';
+let SERVER_URL = 'https://web-production-1f057.up.railway.app';
 
 // ─── Field Selector Map (fallback when no scan available) ─────────────────────
 const FIELD_SELECTOR_MAP = {
