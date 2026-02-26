@@ -1,0 +1,13 @@
+# Environment variables (NEVER commit your API keys!)
+.env
+
+# Node modules (Railway installs these automatically)
+node_modules/
+
+# Mac system files
+.DS_Store
+icons/.DS_Store
+
+# Logs
+*.log
+logs/

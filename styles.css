@@ -1,0 +1,219 @@
+/* Ecomdost Retro Theme (Neo-Brutalism) */
+@import 'auth-styles.css';
+
+:root {
+  --bg-primary: #FFD700; /* Yellow */
+  --bg-secondary: #FFFFFF;
+  --text-primary: #000000;
+  --accent-color: #000000;
+  --border-width: 3px;
+  --shadow-offset: 3px; /* Reduced from 4px */
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  width: 350px; /* Reduced width slightly */
+  background: var(--bg-primary); 
+  color: var(--text-primary);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.container {
+  padding: 12px; /* Reduced from 16px */
+  background: var(--bg-primary);
+  min-height: 300px; /* Reduced min-height, removed fixed height */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 12px; /* Reduced from 20px */
+  background: var(--bg-secondary);
+  border: var(--border-width) solid var(--text-primary);
+  padding: 8px; /* Reduced from 12px */
+  box-shadow: var(--shadow-offset) var(--shadow-offset) 0px var(--text-primary);
+}
+
+.title-box h1 {
+  font-family: 'Verdana', sans-serif;
+  font-size: 18px; /* Slightly smaller */
+  font-weight: 900;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+.subtitle {
+  font-size: 9px;
+  font-weight: 700;
+  background: var(--text-primary);
+  color: var(--bg-secondary);
+  padding: 1px 4px;
+  display: inline-block;
+  margin-top: 2px;
+}
+
+/* Auth Section */
+.auth-container {
+  background: var(--bg-secondary);
+  border: var(--border-width) solid var(--text-primary);
+  padding: 16px; /* Reduced from 20px */
+  text-align: center;
+  box-shadow: var(--shadow-offset) var(--shadow-offset) 0px var(--text-primary);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lock-icon {
+  font-size: 32px; /* Reduced from 40px */
+  margin-bottom: 8px;
+}
+
+.auth-msg {
+  font-weight: 800;
+  font-size: 16px; /* Reduced from 18px */
+  margin-bottom: 12px; /* Reduced */
+  text-transform: uppercase;
+}
+
+.auth-sub {
+  font-size: 11px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+/* Buttons */
+.btn-retro {
+  font-family: 'Verdana', sans-serif;
+  font-weight: 800;
+  font-size: 13px; /* Reduced */
+  padding: 10px 16px; /* Reduced from 12px 20px */
+  border: var(--border-width) solid var(--text-primary);
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all 0.1s;
+  text-transform: uppercase;
+  width: 100%;
+  margin-bottom: 8px; /* Reduced from 10px */
+  box-shadow: 2px 2px 0px var(--text-primary);
+}
+
+.btn-retro:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0px var(--text-primary);
+}
+
+.btn-retro:active {
+  transform: translate(1px, 1px);
+  box-shadow: 0px 0px 0px var(--text-primary);
+}
+
+.btn-primary {
+  background: var(--text-primary);
+  color: var(--bg-secondary);
+  border-color: var(--text-primary);
+}
+
+.btn-primary:hover {
+  background: #333;
+  color: #fff;
+}
+
+.btn-secondary {
+  background: #fff;
+}
+
+/* App Section */
+#app-section {
+  background: var(--bg-secondary);
+  border: var(--border-width) solid var(--text-primary);
+  padding: 12px; /* Reduced from 16px */
+  box-shadow: var(--shadow-offset) var(--shadow-offset) 0px var(--text-primary);
+}
+
+label {
+  font-weight: 700;
+  font-size: 11px;
+  margin-bottom: 4px;
+  display: block;
+  text-transform: uppercase;
+}
+
+select {
+  width: 100%;
+  padding: 6px; /* Reduced */
+  border: 2px solid var(--text-primary);
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+
+.profile-actions {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 12px; /* Reduced */
+}
+
+.profile-actions button {
+  padding: 6px;
+  font-size: 11px;
+  margin: 0;
+}
+
+.divider {
+  height: 3px;
+  background: var(--text-primary);
+  margin: 12px 0; /* Reduced from 16px */
+}
+
+.action-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Reduced */
+}
+
+.btn-large {
+  font-size: 15px;
+  padding: 10px; /* Explicit padding for large buttons */
+  border-width: 3px;
+}
+
+.status-message {
+  margin-top: 8px;
+  padding: 6px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 12px;
+  border: 2px solid transparent;
+  display: none;
+}
+
+.status-message.error {
+  background: #ffe6e6;
+  color: #d32f2f;
+  border-color: #d32f2f;
+  display: block;
+}
+
+.status-message.success {
+  background: #e8f5e9;
+  color: #2e7d32;
+  border-color: #2e7d32;
+  display: block;
+}
+
+footer {
+  margin-top: 8px;
+  text-align: center;
+  font-size: 9px;
+  font-weight: 700;
+  padding-bottom: 4px;
+}
